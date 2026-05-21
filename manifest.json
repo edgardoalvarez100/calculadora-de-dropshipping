@@ -1,0 +1,19 @@
+{
+  "name": "Costeo | Make Online Money",
+  "short_name": "Costeo MOM",
+  "description": "Calculadora completa de rentabilidad para dropshipping con pago contra entrega (COD)",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#FFFFFF",
+  "theme_color": "#B18A56",
+  "lang": "es",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "/placeholder.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}

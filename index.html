@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="es" class="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Resource hints: warm up critical 3rd-party connections (no more Google Fonts) -->
+    <link rel="preconnect" href="https://jagyxlvmbdtqptgthefk.supabase.co" crossorigin />
+    <link rel="dns-prefetch" href="https://connect.facebook.net" />
+    <link rel="dns-prefetch" href="https://www.facebook.com" />
+
+    <!-- Preload critical font (most-used weight) -->
+    <link rel="preload" href="fonts/sg-400-latin.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="fonts/sg-700-latin.woff2" as="font" type="font/woff2" crossorigin />
+
+    <link rel="canonical" href="https://costeomom.lovable.app/" />
+    <link rel="manifest" href="manifest.json" />
+    <meta name="theme-color" content="#FFFFFF" />
+
+    <title>Costeo MOM — Calculadora de Rentabilidad Dropshipping COD</title>
+    <meta name="description" content="Calcula la rentabilidad de tus productos de dropshipping COD en Colombia, Ecuador, México, Perú, Chile, España y más. Margen bruto, CPA ideal y utilidad operacional en 3 pasos." />
+    <meta name="author" content="Make Online Money" />
+    <meta name="robots" content="index, follow" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://costeomom.lovable.app/" />
+    <meta property="og:title" content="Costeo MOM — Calculadora de Rentabilidad Dropshipping COD" />
+    <meta property="og:description" content="Calcula la rentabilidad de tus productos de dropshipping COD en Colombia, Ecuador, México, Perú, Chile, España y más." />
+    <meta property="og:image" content="https://storage.googleapis.com/gpt-engineer-file-uploads/v6JGsP3LhLg7a8PV5QbHgI3yO0r1/social-images/social-1772856332365-Diseño_sin_título_(11).webp" />
+    <meta property="og:locale" content="es_ES" />
+    <meta property="og:site_name" content="Make Online Money" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Costeo MOM — Calculadora de Rentabilidad Dropshipping COD" />
+    <meta name="twitter:description" content="Calcula la rentabilidad de tus productos de dropshipping COD en Colombia, Ecuador, México, Perú, Chile, España y más." />
+    <meta name="twitter:image" content="https://storage.googleapis.com/gpt-engineer-file-uploads/v6JGsP3LhLg7a8PV5QbHgI3yO0r1/social-images/social-1772856332365-Diseño_sin_título_(11).webp" />
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "Costeo MOM — Calculadora de Rentabilidad Dropshipping",
+      "url": "https://costeomom.lovable.app/",
+      "description": "Calculadora completa de rentabilidad para dropshipping con pago contra entrega (COD). Calcula margen bruto, CPA ideal y utilidad operacional.",
+      "applicationCategory": "BusinessApplication",
+      "operatingSystem": "Web",
+      "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+      "author": { "@type": "Organization", "name": "Make Online Money" }
+    }
+    </script>
+
+    <!-- Critical inline CSS: paints above-the-fold instantly, before main bundle arrives -->
+    <style>
+      *,*::before,*::after{box-sizing:border-box}
+      html,body{margin:0;padding:0}
+      html{background:#F7F7F7}
+      body{
+        font-family:'Space Grotesk',system-ui,-apple-system,Segoe UI,Roboto,sans-serif;
+        background:linear-gradient(180deg,#F7F7F7,#EFEFEF);
+        color:#1A1A1F;
+        min-height:100vh;
+        -webkit-font-smoothing:antialiased;
+      }
+      #root{min-height:100vh}
+      /* Skeleton mimics real layout: header bar + 3-step wizard card */
+      .boot{min-height:100vh;background:linear-gradient(180deg,#F7F7F7,#EFEFEF)}
+      .boot-header{
+        position:sticky;top:0;z-index:40;
+        border-bottom:1px solid hsl(240 5% 82%);
+        background:rgba(255,255,255,.6);
+        backdrop-filter:blur(12px);
+        -webkit-backdrop-filter:blur(12px);
+      }
+      .boot-header-inner{
+        max-width:768px;margin:0 auto;padding:12px 16px;
+        display:flex;align-items:center;justify-content:space-between;gap:8px;
+      }
+      .boot-brand{display:flex;align-items:center;gap:8px}
+      .boot-logo{width:32px;height:32px;border-radius:8px;background:#E2E2E5}
+      .boot-pill{width:120px;height:36px;border-radius:12px;background:#E2E2E5}
+      .boot-controls{display:flex;gap:6px}
+      .boot-ctrl{width:44px;height:44px;border-radius:12px;background:#E2E2E5}
+      .boot-main{max-width:768px;margin:0 auto;padding:32px 16px;display:flex;flex-direction:column;gap:24px}
+      .boot-card{
+        border-radius:12px;background:#FFFFFF;
+        border:1px solid hsl(240 5% 82%);
+        box-shadow:0 4px 24px hsl(240 10% 10% / 0.04);
+        padding:24px;
+      }
+      .boot-line{height:14px;border-radius:6px;background:#ECECEF;margin-bottom:12px}
+      .boot-line.lg{height:24px;width:60%}
+      .boot-line.md{width:80%}
+      .boot-line.sm{width:40%;margin-bottom:0}
+      .boot-input{height:48px;border-radius:10px;background:#F2F2F5;margin-top:16px}
+      @keyframes boot-pulse{0%,100%{opacity:1}50%{opacity:.55}}
+      .boot-pulse{animation:boot-pulse 1.4s ease-in-out infinite}
+      /* Hide skeleton as soon as React has rendered something */
+      #root:not(:empty) ~ .boot{display:none}
+    </style>
+
+    <!-- Meta Pixel: official snippet, deferred to idle to protect LCP -->
+    <script>
+      (function() {
+        function loadPixel() {
+          if (window.fbq) return;
+          // Official Meta Pixel bootstrap (creates a compatible queue)
+          !function(f,b,e,v,n,t,s)
+          {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+          n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+          if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+          n.queue=[];t=b.createElement(e);t.async=!0;
+          t.src=v;s=b.getElementsByTagName(e)[0];
+          s.parentNode.insertBefore(t,s)}(window,document,'script',
+          'https://connect.facebook.net/en_US/fbevents.js');
+          window.fbq('init', '27061949106776952');
+          window.fbq('track', 'PageView');
+        }
+        if ('requestIdleCallback' in window) {
+          requestIdleCallback(loadPixel, { timeout: 3000 });
+        } else {
+          window.addEventListener('load', function(){ setTimeout(loadPixel, 1200); });
+        }
+      })();
+    </script>
+    <script type="module" crossorigin src="assets/index-BWyLi98x.js"></script>
+    <link rel="modulepreload" crossorigin href="assets/vendor-react-uwMcNB3H.js">
+    <link rel="modulepreload" crossorigin href="assets/vendor-radix-DvzWZGcf.js">
+    <link rel="modulepreload" crossorigin href="assets/vendor-data-B8oggKLV.js">
+    <link rel="modulepreload" crossorigin href="assets/vendor-motion-DS0I9PFw.js">
+    <link rel="stylesheet" crossorigin href="assets/index-Be35DS5v.css">
+  <script defer src="~flock.js" data-proxy-url="/~api/analytics"></script></head>
+
+  <body>
+    <noscript>
+      <img height="1" width="1" style="display:none"
+        src="https://www.facebook.com/tr?id=27061949106776952&ev=PageView&noscript=1"
+        alt="" />
+    </noscript>
+    <div id="root"></div>
+
+    <!-- Above-the-fold skeleton: gives the user instant visual feedback while React boots -->
+    <div class="boot" aria-hidden="true">
+      <header class="boot-header">
+        <div class="boot-header-inner">
+          <div class="boot-brand">
+            <div class="boot-pill boot-pulse"></div>
+            <div class="boot-logo boot-pulse"></div>
+          </div>
+          <div class="boot-controls">
+            <div class="boot-ctrl boot-pulse"></div>
+            <div class="boot-ctrl boot-pulse"></div>
+            <div class="boot-ctrl boot-pulse"></div>
+          </div>
+        </div>
+      </header>
+      <main class="boot-main">
+        <div class="boot-card">
+          <div class="boot-line lg boot-pulse"></div>
+          <div class="boot-line md boot-pulse"></div>
+          <div class="boot-input boot-pulse"></div>
+          <div class="boot-input boot-pulse"></div>
+          <div class="boot-input boot-pulse"></div>
+          <div class="boot-line sm boot-pulse" style="margin-top:16px"></div>
+        </div>
+        <div class="boot-card">
+          <div class="boot-line lg boot-pulse"></div>
+          <div class="boot-line md boot-pulse"></div>
+          <div class="boot-line sm boot-pulse"></div>
+        </div>
+      </main>
+    </div>
+
+  </body>
+</html>
